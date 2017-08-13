@@ -9,6 +9,9 @@ import {
   MdToolbarModule
 } from '@angular/material';
 
+/**
+ * Just a child module exporting all the used @angular/material components
+ */
 @NgModule({
   exports: [
     MdInputModule,

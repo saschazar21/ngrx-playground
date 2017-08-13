@@ -14,6 +14,9 @@ const routes: Routes = [
   },
 ];
 
+/**
+ * The main shared module which contains all the necessary third party modules
+ */
 @NgModule({
   exports: [
     FormsModule,
