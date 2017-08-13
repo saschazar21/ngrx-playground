@@ -1,0 +1,24 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+button + button {
+  margin-left: 1em;
+}
+
+em {
+  font-family: 'Just Another Hand', cursive;
+  font-size: 2em;
+}
+
+.todo__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo__body > * {
+  display: block;
+}

@@ -1,0 +1,12 @@
+<p *ngIf="!todos?.length">
+  No Todos here...<br/>
+  Go create one!
+</p>
+
+<md-list *ngIf="todos?.length">
+  <md-list-item *ngFor="let todo of todos">
+    <app-list-item [todoItem]="todo"></app-list-item>
+  </md-list-item>
+</md-list>
+
+<app-list-form></app-list-form>

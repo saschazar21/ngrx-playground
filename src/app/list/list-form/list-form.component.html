@@ -1,0 +1,16 @@
+<h2 *ngIf="status">{{ status }} todo</h2>
+
+<form action="" [formGroup]="todoForm" (ngSubmit)="onSubmit(todoForm)" novalidate>
+  <div class="inputs">
+    <md-input-container>
+      <input mdInput id="title" formControlName="title" type="text" placeholder="Enter title">
+    </md-input-container>
+    <md-input-container>
+      <input mdInput id="body" formControlName="body" type="text" placeholder="Enter body">
+    </md-input-container>
+    <input type="hidden" formControlName="id">
+  </div>
+  <div class="buttons">
+    <button md-raised-button color="primary" type="submit">Save</button>
+  </div>
+</form>

@@ -1,0 +1,8 @@
+<div class="todo__body">
+  <em>{{ todoItem.title }}</em>
+  <span>{{ todoItem.body }}</span>
+</div>
+<div class="todo__actions">
+  <button md-raised-button (click)="edit()">Edit</button>
+  <button md-raised-button color="warn" (click)="delete()">Delete</button>
+</div>
