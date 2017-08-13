@@ -1,28 +1,55 @@
-# Angular
+# ngrx Playground
+A sample app for demonstrating the extent of *@ngrx/store* and *@ngrx/effects* of the [@ngrx/platform package](https://github.com/ngrx/platform) on a simple todo list.  
+Two demo todos are already contained and appear 2 seconds after the initial page loadin.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
+* Author: [Sascha Zarhuber](https://sascha.work)
+* GitHub: [@saschazar21](https://github.com/saschazar21)
+* Twitter: [@saschazar](https://twitter.com/saschazar)
+* Source: [https://github.com/saschazar21/ngrx-playground](https://github.com/saschazar21/ngrx-playground)
+* Issues: [https://github.com/saschazar21/ngrx-playground/issues](https://github.com/saschazar21/ngrx-playground/issues)
+* Releases: [https://github.com/saschazar21/ngrx-playground/releases](https://github.com/saschazar21/ngrx-playground/releases)
 
-## Development server
+## Prerequisites
+* [Node.js](https://nodejs.org/en/) >= v6
+* [Angular CLI](https://cli.angular.io) (optional)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Installation
+* `git clone https://github.com/saschazar21/ngrx-playground`
+* `cd ngrx-playground`
+* `npm start` or if *Angular CLI* is installed: `ng serve`
 
-## Code scaffolding
+## Source code
+The source code is nothing special and its main purpose is to show how @ngrx/store could be included into a project.  
+The app was bootstrapped using the `ng new` command of *Angular CLI*, the different list components and sub modules were included using the `ng generate` commmand.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+- src
+  | - app
+    | - demo-content
+    | - list          // ListComponent
+      | - list-form   // ListFormComponent
+      | - list-item   // ListItemComponent
 
-## Build
+    | - models
+    | - shared
+      | - material    // sub module for exporting @angular/material
+      | - store
+        | - actions   // The ngrx actions
+        | - effects   // The ngrx effects
+        | - reducers  // The ngrx reducers
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Used libraries
+* [@ngrx/store](https://github.com/ngrx/platform/blob/master/docs/store/README.md) and [@ngrx/effects](https://github.com/ngrx/platform/blob/master/docs/effects/README.md)
+* [@angular/material](http://material.angular.io) and *@angular/cdk*
+* and many more as sub-dependencies of the above
 
-## Running unit tests
+## Issues
+Please report any bugs or issues to the [issues](https://github.com/saschazar21/metalsmith-pure-text/issues) section.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Contribution
+Contributors welcome!  
+Please fork this repository, open a pull request and drop me a line on [twitter](https://twitter.com/saschazar/).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## License
+MIT, Sascha Zarhuber, 2017
